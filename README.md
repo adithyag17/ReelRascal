@@ -88,23 +88,7 @@ Reel Rascal is not just another movie chatbot. It's an AI companion designed for
 - [ ] Community contribution framework
 - [ ] Web interface development
 
-## 🌐 Website Integration
 
-This project is designed to be integrated directly into a personal website as a custom chatbot component.
-
-### Integration Approach
-
-The Reel Rascal will be deployed as a custom component on the developer's existing website with these components:
-
-1. **Frontend Widget**: Embedded chat interface in the website's UI
-2. **Backend API**: Hosted separately with the RAG system and model interface
-3. **Vector Database**: Managed instance of the vector database for quick retrieval
-
-### Performance Considerations
-
-- **Latency**: Response time optimization through caching common queries
-- **Cost Management**: Hybrid approach using smaller models for classification and larger ones for generation
-- **Scalability**: Stateless design to handle traffic spikes during new movie releases
 
 ## 🤝 Contribution Guidelines
 
