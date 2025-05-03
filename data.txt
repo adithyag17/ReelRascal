@@ -1,0 +1,37 @@
+one million movies imdb - https://www.kaggle.com/datasets/alanvourch/tmdb-movies-daily-updates/data
+hindi movies imddb - https://www.kaggle.com/datasets/anoopjohny/the-imdb-bollywood-movies-dataset/data
+tv series tmdb json - https://www.kaggle.com/datasets/octopusteam/tmdb-tv-series-dataset
+tmdb movies dataset (1m) - https://www.kaggle.com/datasets/asaniczka/tmdb-movies-dataset-2023-930k-movies
+movie plots - https://www.kaggle.com/datasets/mechallenge/wikipedia-movie-plot
+
+Data Processing : 
+Option 1: Single Vector Database with Metadata
+This is generally the recommended approach:
+┌─────────────────────────────┐
+│   Unified Vector Database   │
+│                             │
+│  ┌─────────┐ ┌─────────┐   │
+│  │ IMDB    │ │ TMDB    │   │
+│  │ Vectors │ │ Vectors │   │
+│  └─────────┘ └─────────┘   │
+│                             │
+│  ┌─────────┐ ┌─────────┐   │
+│  │ Hindi   │ │ Plot    │   │
+│  │ Vectors │ │ Vectors │   │
+│  └─────────┘ └─────────┘   │
+└─────────────────────────────┘
+
+Store all embeddings in a single vector database
+Use metadata fields to track the source dataset
+Include fields like: source_dataset, language, content_type (plot/review/cast info)
+During retrieval, you can either:
+
+Search across all data and get the best matches
+Filter by metadata if you want specific source types
+
+
+
+for finetuning : https://www.kaggle.com/datasets/Cornell-University/movie-dialog-corpus
+
+
+
